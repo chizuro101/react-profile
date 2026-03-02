@@ -1,0 +1,135 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/react-profile/_next/static/css/4031d401c8891c24.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/react-profile/_next/static/chunks/webpack-652cd3385006ee92.js"/><script src="/react-profile/_next/static/chunks/4bd1b696-ad45a0d75f1c7ab5.js" async=""></script><script src="/react-profile/_next/static/chunks/684-31a6bc0cd54934fb.js" async=""></script><script src="/react-profile/_next/static/chunks/main-app-6b34738a4d72c610.js" async=""></script><script src="/react-profile/_next/static/chunks/804-5a867fdf58543fc8.js" async=""></script><script src="/react-profile/_next/static/chunks/874-23bb25126bb99fa5.js" async=""></script><script src="/react-profile/_next/static/chunks/app/layout-81a0dda9a23ae82a.js" async=""></script><script src="/react-profile/_next/static/chunks/app/Contact/page-18b4a5a4a44f9132.js" async=""></script><link rel="icon" href="/react-profile/favicon.ico" type="image/x-icon" sizes="16x16"/><script>document.querySelectorAll('body link[rel="icon"], body link[rel="apple-touch-icon"]').forEach(el => document.head.appendChild(el))</script><script src="/react-profile/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><body class="__variable_464b20 __variable_c760a6 __variable_e62b78 antialiased font-gilroy bg-black" style="cursor:none"><div class="hidden md:block" style="pointer-events:none;left:0;top:0;position:fixed;z-index:9999;transform:none;width:8px;height:8px;border-radius:50%;background-color:#06b6d4;box-shadow:0 0 10px 4px rgba(6, 182, 212, 0.7)"></div><div class="hidden md:block" style="pointer-events:none;left:0;top:0;position:fixed;z-index:9998;transform:none;width:30px;height:30px;border-radius:50%;border:2px solid #0891b2;opacity:0.5"></div><header class="sticky top-0 z-50 flex w-full items-center justify-between px-4 py-2 md:px-8 md:py-3 bg-transparent backdrop-blur-[3px]"><a href="/react-profile/"><img alt="Lauv Logo" loading="lazy" width="35" height="35" decoding="async" data-nimg="1" class="m-4 md:m-10 transition-all duration-300 hover:scale-150 hover:rotate-10 hover:brightness-125" style="color:transparent" src="/logo/lauv-logo2.svg"/></a><div class="hidden md:block font-medium" style="height:70px;width:400px;position:relative"><style>
+          :root {
+            --linear-ease: linear(0, 0.068, 0.19 2.7%, 0.804 8.1%, 1.037, 1.199 13.2%, 1.245, 1.27 15.8%, 1.274, 1.272 17.4%, 1.249 19.1%, 0.996 28%, 0.949, 0.928 33.3%, 0.926, 0.933 36.8%, 1.001 45.6%, 1.013, 1.019 50.8%, 1.018 54.4%, 1 63.1%, 0.995 68%, 1.001 85%, 1);
+          }
+          .effect {
+            position: absolute;
+            opacity: 1;
+            pointer-events: none;
+            display: grid;
+            place-items: center;
+            z-index: 1;
+          }
+          .effect.text {
+            color: white;
+            transition: color 0.3s ease;
+          }
+          .effect.text.active {
+            color: black;
+          }
+          .effect.filter {
+            filter: blur(7px) contrast(100) blur(0);
+            mix-blend-mode: lighten;
+          }
+          .effect.filter::before {
+            content: "";
+            position: absolute;
+            inset: -75px;
+            z-index: -1;
+            background: none;	
+          }
+          .effect.filter::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: white;
+            transform: scale(0);
+            opacity: 0;
+            z-index: -1;
+            border-radius: 9999px;
+          }
+          .effect.active::after {
+          }
+          @keyframes pill {
+            to {
+              transform: scale(1);
+              opacity: 1;
+            }
+          }
+          .particle,
+          .point {
+            display: block;
+            opacity: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 9999px;
+            transform-origin: center;
+          }
+          .particle {
+            --time: 5s;
+            position: absolute;
+            top: calc(50% - 8px);
+            left: calc(50% - 8px);
+            animation: particle calc(var(--time)) ease 1 -350ms;
+          }
+          .point {
+            background: var(--color);
+            opacity: 1;
+            animation: point calc(var(--time)) ease 1 -350ms;
+          }
+          @keyframes particle {
+            0% {
+              transform: rotate(0deg) translate(calc(var(--start-x)), calc(var(--start-y)));
+              opacity: 1;
+              animation-timing-function: cubic-bezier(0.55, 0, 1, 0.45);
+            }
+            70% {
+              transform: rotate(calc(var(--rotate) * 0.5)) translate(calc(var(--end-x) * 1.2), calc(var(--end-y) * 1.2));
+              opacity: 1;
+              animation-timing-function: ease;
+            }
+            85% {
+              transform: rotate(calc(var(--rotate) * 0.66)) translate(calc(var(--end-x)), calc(var(--end-y)));
+              opacity: 1;
+            }
+            100% {
+              transform: rotate(calc(var(--rotate) * 1.2)) translate(calc(var(--end-x) * 0.5), calc(var(--end-y) * 0.5));
+              opacity: 1;
+            }
+          }
+          @keyframes point {
+            0% {
+              transform: scale(0);
+              opacity: 0;
+              animation-timing-function: cubic-bezier(0.55, 0, 1, 0.45);
+            }
+            25% {
+              transform: scale(calc(var(--scale) * 0.25));
+            }
+            38% {
+              opacity: 1;
+            }
+            65% {
+              transform: scale(var(--scale));
+              opacity: 1;
+              animation-timing-function: ease;
+            }
+            85% {
+              transform: scale(var(--scale));
+              opacity: 1;
+            }
+            100% {
+              transform: scale(0);
+              opacity: 0;
+            }
+          }
+          li.active {
+            color: black;
+            text-shadow: none;
+          }
+          li.active::after {
+            opacity: 1;
+            transform: scale(1);
+          }
+          li::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 8px;
+            background: white;
+            opacity: 0;
+            transform: scale(0);
+            transition: all 0.3s ease;
+            z-index: -1;
+          }
+        </style><div class="relative"><nav class="flex relative" style="transform:translate3d(0,0,0.01px)"><ul class="flex gap-8 list-none p-0 px-4 m-0 relative z-[3]" style="color:white;text-shadow:0 1px 1px hsl(205deg 30% 10% / 0.2)"><li class="py-[0.6em] px-[1em] rounded-full relative transition-[background-color_color_box-shadow] duration-300 ease shadow-[0_0_0.5px_1.5px_transparent] text-white active"><a class="outline-none" href="/react-profile/">Home</a></li><li class="py-[0.6em] px-[1em] rounded-full relative transition-[background-color_color_box-shadow] duration-300 ease shadow-[0_0_0.5px_1.5px_transparent] text-white "><a class="outline-none" href="/react-profile/Hackathons/">Awards</a></li><li class="py-[0.6em] px-[1em] rounded-full relative transition-[background-color_color_box-shadow] duration-300 ease shadow-[0_0_0.5px_1.5px_transparent] text-white "><a class="outline-none" href="/react-profile/Contact/">Contact</a></li></ul></nav><span class="effect filter"></span><span class="effect text"></span></div></div><button class="md:hidden text-white p-2 focus:outline-none" aria-label="Toggle mobile menu"><div class="w-6 h-0.5 bg-white mb-1.5 transition-all duration-300 ease-in-out"></div><div class="w-6 h-0.5 bg-white mb-1.5 transition-all duration-300 ease-in-out"></div><div class="w-6 h-0.5 bg-white transition-all duration-300 ease-in-out"></div></button></header><main class="flex flex-col items-center justify-center min-h-screen py-12 px-4 sm:px-6 lg:px-8"><div class="text-center mb-12 md:mb-16"><p class="blur-text text-4xl sm:text-5xl md:text-6xl font-extrabold text-center flex flex-wrap"><span style="display:inline-block;will-change:transform, filter, opacity;filter:blur(10px);opacity:0;transform:translateY(-50px)">G</span><span style="display:inline-block;will-change:transform, filter, opacity;filter:blur(10px);opacity:0;transform:translateY(-50px)">e</span><span style="display:inline-block;will-change:transform, filter, opacity;filter:blur(10px);opacity:0;transform:translateY(-50px)">t</span><span style="display:inline-block;will-change:transform, filter, opacity;filter:blur(10px);opacity:0;transform:translateY(-50px)"> </span><span style="display:inline-block;will-change:transform, filter, opacity;filter:blur(10px);opacity:0;transform:translateY(-50px)">I</span><span style="display:inline-block;will-change:transform, filter, opacity;filter:blur(10px);opacity:0;transform:translateY(-50px)">n</span><span style="display:inline-block;will-change:transform, filter, opacity;filter:blur(10px);opacity:0;transform:translateY(-50px)"> </span><span style="display:inline-block;will-change:transform, filter, opacity;filter:blur(10px);opacity:0;transform:translateY(-50px)">T</span><span style="display:inline-block;will-change:transform, filter, opacity;filter:blur(10px);opacity:0;transform:translateY(-50px)">o</span><span style="display:inline-block;will-change:transform, filter, opacity;filter:blur(10px);opacity:0;transform:translateY(-50px)">u</span><span style="display:inline-block;will-change:transform, filter, opacity;filter:blur(10px);opacity:0;transform:translateY(-50px)">c</span><span style="display:inline-block;will-change:transform, filter, opacity;filter:blur(10px);opacity:0;transform:translateY(-50px)">h</span></p></div><div class="w-full max-w-md md:max-w-3xl lg:max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12"><div class="flex flex-col space-y-6"><h2 class="text-2xl sm:text-3xl font-bold mb-4">Contact Information</h2><div class="flex items-center text-white/80"><span class="mr-2 text-cyan-500">📧</span> <a href="mailto:johnmarkdelacruzii5@gmail.com" class="hover:underline text-base sm:text-lg">johnmarkdelacruzii5@gmail.com</a></div><div class="mt-8"><h3 class="text-xl sm:text-2xl font-bold mb-4">Connect with Me</h3><div class="flex space-x-4"><a target="_blank" rel="noopener noreferrer" class="transition-transform duration-200 hover:scale-110" href="https://github.com/chizuro101"><img alt="GitHub icon" loading="lazy" width="30" height="30" decoding="async" data-nimg="1" class="w-7 h-7 sm:w-8 sm:h-8 object-contain" style="color:transparent" src="/icons/github_icon.svg"/></a><a target="_blank" rel="noopener noreferrer" class="transition-transform duration-200 hover:scale-110" href="https://www.linkedin.com/in/lauvigne-lumeda/"><img alt="LinkedIn icon" loading="lazy" width="30" height="30" decoding="async" data-nimg="1" class="w-7 h-7 sm:w-8 sm:h-8 object-contain" style="color:transparent" src="/icons/linkedin_icon.svg"/></a><a target="_blank" rel="noopener noreferrer" class="transition-transform duration-200 hover:scale-110" href="mailto:johnmarkdelacruzii5@gmail.com"><img alt="Gmail icon" loading="lazy" width="30" height="30" decoding="async" data-nimg="1" class="w-7 h-7 sm:w-8 sm:h-8 object-contain" style="color:transparent" src="/icons/gmail_icon.svg"/></a></div></div></div><div><h2 class="text-2xl sm:text-3xl font-bold mb-4">Send a Message</h2><form class="flex flex-col space-y-4"><div><label for="name" class="block text-white/80 text-sm font-medium mb-1">Name</label><input type="text" id="name" class="w-full px-3 py-2 bg-[#1a1b1c] border border-white/[.15] rounded-md focus:outline-none focus:ring-cyan-500 focus:border-cyan-500 text-white" required="" name="name"/></div><div><label for="email" class="block text-white/80 text-sm font-medium mb-1">Email</label><input type="email" id="email" class="w-full px-3 py-2 bg-[#1a1b1c] border border-white/[.15] rounded-md focus:outline-none focus:ring-cyan-500 focus:border-cyan-500 text-white" required="" name="email"/></div><div><label for="subject" class="block text-white/80 text-sm font-medium mb-1">Subject</label><input type="text" id="subject" class="w-full px-3 py-2 bg-[#1a1b1c] border border-white/[.15] rounded-md focus:outline-none focus:ring-cyan-500 focus:border-cyan-500 text-white" name="subject"/></div><div><label for="message" class="block text-white/80 text-sm font-medium mb-1">Message</label><textarea id="message" name="message" rows="4" class="w-full px-3 py-2 bg-[#1a1b1c] border border-white/[.15] rounded-md focus:outline-none focus:ring-cyan-500 focus:border-cyan-500 text-white" required=""></textarea></div><button type="submit" class="w-full px-4 py-2 bg-cyan-600 text-white font-bold rounded-md hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 focus:ring-offset-black transition duration-200">Send Message</button></form></div></div><div class="absolute top-0 left-0 w-full h-full z-[-5] opacity-15"><canvas class="w-full h-full border-none block"></canvas></div></main><!--$--><!--/$--><!--$--><!--/$--> <div class="fixed bottom-4 right-4 md:bottom-8 md:right-8 z-50 bg-black/60 border border-white/[.30] border-dashed rounded-full p-2 md:p-4 flex flex-col items-center space-y-7 md:space-y-5"><a target="_blank" rel="noopener noreferrer" class="transition-transform duration-200 hover:scale-110" href="https://github.com/Yuyuhiei"><img alt="GitHub icon" loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 object-contain" style="color:transparent" src="/icons/github_icon.svg"/></a><a target="_blank" rel="noopener noreferrer" class="transition-transform duration-200 hover:scale-110" href="https://www.linkedin.com/in/lauvigne-lumeda/"><img alt="LinkedIn icon" loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 object-contain" style="color:transparent" src="/icons/linkedin_icon.svg"/></a><a target="_blank" rel="noopener noreferrer" class="transition-transform duration-200 hover:scale-110" href="mailto:johnmarkdelacruzii5@gmail.com"><img alt="Gmail icon" loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 object-contain" style="color:transparent" src="/icons/gmail_icon.svg"/></a></div><script src="/react-profile/_next/static/chunks/webpack-652cd3385006ee92.js" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[4970,[],\"ClientSegmentRoot\"]\n3:I[4931,[\"804\",\"static/chunks/804-5a867fdf58543fc8.js\",\"874\",\"static/chunks/874-23bb25126bb99fa5.js\",\"177\",\"static/chunks/app/layout-81a0dda9a23ae82a.js\"],\"default\"]\n4:I[7555,[],\"\"]\n5:I[1295,[],\"\"]\n7:I[894,[],\"ClientPageRoot\"]\n8:I[4079,[\"804\",\"static/chunks/804-5a867fdf58543fc8.js\",\"874\",\"static/chunks/874-23bb25126bb99fa5.js\",\"577\",\"static/chunks/app/Contact/page-18b4a5a4a44f9132.js\"],\"default\"]\nb:I[9665,[],\"MetadataBoundary\"]\nd:I[9665,[],\"OutletBoundary\"]\n10:I[4911,[],\"AsyncMetadataOutlet\"]\n12:I[9665,[],\"ViewportBoundary\"]\n14:I[6614,[],\"\"]\n:HL[\"/react-profile/_next/static/css/4031d401c8891c24.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"SVBgCxLxvK5Zt2GuoT9st\",\"p\":\"/react-profile\",\"c\":[\"\",\"Contact\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"Contact\",{\"children\":[\"__PAGE__\",{}]}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/react-profile/_next/static/css/4031d401c8891c24.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"$L2\",null,{\"Component\":\"$3\",\"slots\":{\"children\":[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L5\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]},\"params\":{},\"promise\":\"$@6\"}]]}],{\"children\":[\"Contact\",[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L5\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[\"__PAGE__\",[\"$\",\"$1\",\"c\",{\"children\":[[\"$\",\"$L7\",null,{\"Component\":\"$8\",\"searchParams\":{},\"params\":\"$0:f:0:1:1:props:children:1:props:params\",\"promises\":[\"$@9\",\"$@a\"]}],[\"$\",\"$Lb\",null,{\"children\":\"$Lc\"}],null,[\"$\",\"$Ld\",null,{\"children\":[\"$Le\",\"$Lf\",[\"$\",\"$L10\",null,{\"promise\":\"$@11\"}]]}]]}],{},null,false]},null,false]},null,false],[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$1\",\"eIMenC3bCqOvcelPc1Wqj\",{\"children\":[[\"$\",\"$L12\",null,{\"children\":\"$L13\"}],null]}],null]}],false]],\"m\":\"$undefined\",\"G\":[\"$14\",\"$undefined\"],\"s\":false,\"S\":true}\n"])</script><script>self.__next_f.push([1,"15:\"$Sreact.suspense\"\n16:I[4911,[],\"AsyncMetadata\"]\n6:{}\n9:{}\na:{}\nc:[\"$\",\"$15\",null,{\"fallback\":null,\"children\":[\"$\",\"$L16\",null,{\"promise\":\"$@17\"}]}]\n"])</script><script>self.__next_f.push([1,"f:null\n"])</script><script>self.__next_f.push([1,"13:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\ne:null\n"])</script><script>self.__next_f.push([1,"17:{\"metadata\":[[\"$\",\"link\",\"0\",{\"rel\":\"icon\",\"href\":\"/react-profile/favicon.ico\",\"type\":\"image/x-icon\",\"sizes\":\"16x16\"}]],\"error\":null,\"digest\":\"$undefined\"}\n11:{\"metadata\":\"$17:metadata\",\"error\":null,\"digest\":\"$undefined\"}\n"])</script></body></html>
