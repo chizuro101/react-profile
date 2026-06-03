@@ -2,7 +2,7 @@
 
 // Include imports for Lenis AND the cursor
 import React, { useEffect, useRef, useState } from 'react';
-import Lenis from '@studio-freight/lenis';
+import Lenis from 'lenis'
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import Image from "next/image";
 import GooeyNav from "@/blocks/Components/GooeyNav/GooeyNav";
