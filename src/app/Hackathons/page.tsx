@@ -114,12 +114,9 @@ export default function Hackathons() {
                 key={index}
                 entryNumber={entry.entryNumber}
                 title={entry.title}
-                award={entry.award}
                 description={entry.description}
                 imageSrc={entry.imageSrc}
-                projectLink={entry.projectLink} // Pass the project link
-                trophyType={entry.trophyType} // Pass the trophy type
-                techStackIcons={entry.techStackIcons} // Pass the tech stack icons array
+                trophyType={entry.trophyType}
               />
             ))}
           </div>
