@@ -18,7 +18,7 @@ import { gilroy } from "@/fonts/fonts";
 // Define items for GooeyNav (moved from page.tsx)
 const items = [
   { label: "Home", href: "/" },
-  { label: "Awards", href: "/Hackathons" },
+  { label: "Awards", href: "/Recognition" },
   { label: "Contact", href: "/Contact" }, // Adjust as needed
 ];
 
