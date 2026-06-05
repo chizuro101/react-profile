@@ -116,7 +116,7 @@ export default function Hackathons() {
                 title={entry.title}
                 description={entry.description}
                 imageSrc={entry.imageSrc}
-                trophyType={entry.trophyType} // Pass the trophy type Pass the tech stack icons array
+                trophyType={entry.trophyType}
               />
             ))}
           </div>
